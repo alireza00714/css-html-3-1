@@ -257,46 +257,117 @@ input[type="button"] {
 }
 
 /* laptop - layout */
-@media screen and (max-width: 1280px) and (min-width: 1024px){
-  .left-side{
+@media screen and (max-width: 1280px) and (min-width: 1024px) {
+  .left-side {
     width: 50%;
+    height: auto;
   }
-  .right-side{
+  .right-side {
+    padding: 5% 7%;
     width: 50%;
+    height: auto;
+  }
+  .email,
+  .password {
+    margin: 0 0 10% 0;
   }
 }
 
 /* Tablet - layout */
-@media screen and (max-width: 1023px) and (min-width: 600px){
-  .main{
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .main {
     flex-direction: column;
-
   }
-  .left-side{
+  .left-side {
     width: 100%;
     height: 30%;
   }
-  .right-side{
+  .right-side {
+    width: 100%;
+    height: 70%;
+  }
+
+  .left-side > span {
+    visibility: hidden;
+  }
+
+  .description {
+    margin: 0 0 5% 0;
+  }
+
+  .guid{
+    margin: 0 0 10% 0;
+  }
+
+  .right-side > .title > span{
+    font-size: 1.7rem;
+  }
+
+  .right-side > .guid > span {
+    font-size: 1.2rem;
+  }
+
+  .email,
+  .password {
+    margin: 0 0 7% 0;
+  }
+
+  .captcha-section {
+    justify-content: flex-end;
+  }
+  .captcha-input {
+    margin: 0 0 0 30px;
+  }
+
+  input[placeholder="پست الکترونیک"],
+  input[type="password"] {
+    width: 98%;
+  }
+}
+
+/* Mobile - layout */
+@media screen and (max-width: 599px) and (min-width: 280px) {
+  .main {
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+    height: 30%;
+  }
+  .right-side {
     width: 100%;
     height: 80%;
   }
 
-  .description {
-    margin: 0 0 10% 0;
+  .left-side > span {
+    visibility: hidden;
   }
 
-  .guid > span{
+  .description {
+    margin: 0 0 5% 0;
+  }
+
+  .right-side > .title > span{
     font-size: 1.2rem;
   }
 
-  .email,.password{
-    margin: 0 0 10% 0;
+  .guid {
+    margin: 0 0 5% 0;
   }
 
-  .captcha-section{
-    justify-content: flex-end;
+  .right-side > .guid > span {
+    font-size: small;
   }
-  .captcha-input{
-    margin: 0 0 0 30px;
+
+  .email,
+  .password {
+    margin: 0 0 5% 0;
+  }
+  .description {
+    margin: 0 0 5% 0;
+  }
+
+  .input-section{
+    margin: 0 0 10% 0;
   }
 }
