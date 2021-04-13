@@ -161,11 +161,11 @@ svg {
   margin: 0 0 4% 0;
 }
 .right-side > .guid > span {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #9d9e99;
 }
 .guid {
-  margin: 0 0 20% 0;
+  margin: 0 0 15% 0;
 }
 
 .input-section {
@@ -201,11 +201,9 @@ input[type="password"]::placeholder {
   align-items: center;
   border-bottom: 2px solid #bfbfbb;
   width: 100%;
-}
-.email,
-.password {
   margin: 0 0 15% 0;
 }
+
 .captcha-section {
   display: flex;
   justify-content: space-between;
@@ -239,7 +237,7 @@ input[placeholder="کد امنیتی"] {
 input[type="button"] {
   width: 100%;
   background-color: #0093e9;
-  height: 50px;
+  height: 60px;
   border: none;
   font-family: "yekan";
   color: white;
@@ -256,4 +254,49 @@ input[type="button"] {
 .remember > span {
   font-size: 0.75rem;
   color: #bfbfbb;
+}
+
+/* laptop - layout */
+@media screen and (max-width: 1280px) and (min-width: 1024px){
+  .left-side{
+    width: 50%;
+  }
+  .right-side{
+    width: 50%;
+  }
+}
+
+/* Tablet - layout */
+@media screen and (max-width: 1023px) and (min-width: 600px){
+  .main{
+    flex-direction: column;
+
+  }
+  .left-side{
+    width: 100%;
+    height: 30%;
+  }
+  .right-side{
+    width: 100%;
+    height: 80%;
+  }
+
+  .description {
+    margin: 0 0 10% 0;
+  }
+
+  .guid > span{
+    font-size: 1.2rem;
+  }
+
+  .email,.password{
+    margin: 0 0 10% 0;
+  }
+
+  .captcha-section{
+    justify-content: flex-end;
+  }
+  .captcha-input{
+    margin: 0 0 0 30px;
+  }
 }
